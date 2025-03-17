@@ -12,16 +12,16 @@
 <body>
 
 <!-- <?php
-$x = 5; // global scope
+// $x = 5; // global scope
  
-function myTest() {
-    $x = 50;
-  // using x inside this function will generate an error
-  echo "<p>Variable x inside function is: $x</p>";
-} 
-myTest();
+// function myTest() {
+//     $x = 50;
+//   // using x inside this function will generate an error
+//   echo "<p>Variable x inside function is: $x</p>";
+// } 
+// myTest();
 
-echo "<p>Variable x outside function is: $x</p>";
+// echo "<p>Variable x outside function is: $x</p>";
 ?> -->
 
 <?php
@@ -82,9 +82,22 @@ $Y="ASDC";
 // $x = acos(8);
 // var_dump($x);
 
-$x = 23465.768;
-$int_cast = (int)$x;
-echo $int_cast;
+// $x = 23465.768;
+// $int_cast = (int)$x;
+// echo $int_cast;
+
+// $a=5;
+// $a = (string)$a;
+// var_dump($a)
+
+// $a = 5.14;
+// $a = (int)$a;
+// var_dump($a);
+
+$a = 6.4;
+// echo(sqrt(4));
+// echo (round($a))
+// echo (rand(1,100))
 ?>
 
 0</body>
