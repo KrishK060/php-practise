@@ -18,12 +18,39 @@
 // const mycar = "bus";
 // echo mycar;
 
-define("greeting","good morning");
+// define("greeting","good morning");
 
-function mytest(){
- echo greeting;
+// function mytest(){
+//  echo greeting;
+// }
+// mytest();
+
+// class fruits{
+//     public function fruit(){
+//         return __class__;
+//     }
+// }
+// $kiwi = new fruits();
+// echo $kiwi->fruit();
+
+// echo __DIR__;
+
+// echo __FILE__
+
+// function value(){
+//     return __FUNCTION__;
+// }
+// echo value();
+
+// echo __LINE__
+
+class fruits{
+    public function fruit(){
+        return __method__;
+    }
 }
-mytest();
+$kiwi = new fruits();
+echo $kiwi->fruit();
 
 ?>
 
