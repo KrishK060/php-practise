@@ -81,7 +81,66 @@
     //   );
     //   $firstname = array_column($a,'first_name');
     //   print_r($firstname);
+
+
+    // $a1=array_fill(3,4,"blue");
+    // $b1=array_fill(0,1,"red");
+    // print_r($a1);
+    // echo "<br>";
+    // print_r($b1);
+
+    // $a1=array("a"=>"red","b"=>"green","c"=>"blue","d"=>"yellow");
+    // $result = array_flip($a1);
+    // print_r($result);
+
+
+    // $a1=array("a"=>"red","b"=>"green","c"=>"blue","d"=>"yellow");
+    // $a2=array("g"=>"red","f"=>"green","e"=>"blue");
+    // $result = array_intersect($a1,$a2);
+    // print_r($result);
+
+
+    // $a1=array("a"=>"red","b"=>"green","c"=>"blue","d"=>"yellow");
+    // $a2=array("g"=>"red","f"=>"green","e"=>"blue");
+    // $result = array_intersect_assoc($a1,$a2);
+    // print_r($result);
+
+
+    // $a1=array("a"=>"red","b"=>"green","c"=>"blue","d"=>"yellow");
+    // if(array_key_exists("e", $a1)){
+    //     echo "key exists";
+    // }else{
+    //     echo "key doesnt exists";
+    // }
+
+    // function mul($v){
+    //     return ($v * $v);
+    // }
+    // $a = array(1,2,3,4,5);
+    // print_r(array_map("mul",$a));
+
+    // $a1=array("red","green");
+    // $a2=array("blue","yellow");
+    // print_r(array_merge($a1,$a2));
+
+    // $a = array(1,2,3,4,5,6,7,);
+    // // print_r(array_sum($a));
+    // print_r(array_values($a));
+
+    function myfunction1($value,$key,$p){
+        echo "$key $p $value <br>";
+    }
     
+$a=array("a"=>"red","b"=>"green","c"=>"blue");
+$a2=array($a1,"1"=>"blue","2"=>"yellow");
+array_walk_recursive($a2,"myfunction1","has a value");
+
+function myfunction($value,$key,$p){
+    echo "$key $p $value <br>";
+}
+$a1=array("a"=>"red","b"=>"green");
+$a2=array($a1,"1"=>"blue","2"=>"yellow");
+array_walk_recursive($a2,"myfunction","has a value");
 ?>
 </pre>
 </body>
