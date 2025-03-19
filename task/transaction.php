@@ -5,10 +5,6 @@ namespace Basics;
 
 class transaction
 {
-    // public function __construct()
-    // {
-    //     $this->user = new User();
-    // }
     public $user;
     public $amount;
     public $type;
