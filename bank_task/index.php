@@ -23,4 +23,6 @@ $current->withdraw(300);  // Insufficient funds
 // Show total bank accounts and transactions
 echo "Total bank accounts: " . bankAccount::getTotalAccounts() . "<br>";
 echo "Total bank transactions: " . bankAccount::getTotalTransaction() . "<br>";
+
+
 ?>
