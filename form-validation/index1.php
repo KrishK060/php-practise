@@ -31,3 +31,10 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
     }
 }
 
+// $savingDetails = $saving ->getAccountDetail();
+// echo "Account Number: " . $savingDetails[0] . "<br>";
+// echo "Balance: " . $savingDetails[1] . "<br>";
+
+// function getAccountDetail(){
+//     return [$this->accountNumber,$this->balance];
+// }
