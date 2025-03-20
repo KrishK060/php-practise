@@ -1,6 +1,6 @@
 <?php
 
-include_once 'bankAccount.php';  
+namespace Bank_task;
 
 class savingAccount extends bankAccount {
     public function deposit(float $amount){

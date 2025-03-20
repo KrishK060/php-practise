@@ -1,7 +1,5 @@
 <?php
-
-include_once 'message.php';  
-
+namespace Bank_task;
 abstract class bankAccount {
     public $accountNumber;
     public $balance;

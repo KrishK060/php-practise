@@ -1,11 +1,12 @@
 <?php
-// index.php
-
-// Include the necessary class files
 include_once 'message.php';
 include_once 'bankAccount.php';
 include_once 'savingAccount.php';
 include_once 'currentAccount.php';
+use Bank_task\savingAccount;
+use Bank_task\currentAccount;
+use Bank_task\bankAccount;
+
 
 // Create a saving account and perform actions
 $saving = new savingAccount(1, 200);

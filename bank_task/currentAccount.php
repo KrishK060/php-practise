@@ -1,6 +1,6 @@
 <?php
-// currentAccount.php
-include_once 'bankAccount.php';  // Include the bankAccount class
+
+namespace Bank_task;
 
 class currentAccount extends bankAccount {
     private $min_balance = 100;
