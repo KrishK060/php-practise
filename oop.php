@@ -154,18 +154,94 @@
 //   $animal->makeSound();
 // }
 
-class domain {
-  protected static function getWebsiteName() {
-    return "W3Schools.com";
-  }
+// class domain {
+//   protected static function getWebsiteName() {
+//     return "W3Schools.com";
+//   }
+// }
+
+// class domainW3 extends domain {
+//   public $websiteName;
+//   public function __construct() {
+//     $this->websiteName = parent::getWebsiteName();
+//   }
+// }
+
+// $domainW3 = new domainW3;
+// echo $domainW3 -> websiteName;
+
+// class base{
+//   public function hello(){
+//     echo "hello";
+//   }
+// }
+// trait world{
+//   public function world(){
+//     parent::hello();
+//     echo "world";
+//   } 
+// }
+// class helloworld extends base{
+//   use world;
+// }
+// $o = new helloworld;
+// $o->world();
+
+// trait base{
+//   public function hello(){
+//     echo "hello";
+//   }
+// }
+// trait world{
+//   public function world(){
+//     // parent::hello();
+//     echo "world!";
+//   } 
+// }
+// trait helloworld1{
+//  use base,world;
+// }
+// class helloworld{
+//   use helloworld1;
+// }
+// $o = new helloworld;
+// $o->hello();
+// $o->world();
+
+// trait Counter
+// {
+//   public  $c = 0;
+//     public function inc()
+//     {
+        
+//         $c =+ 1;
+//         echo "$c\n";
+//     }
+// }
+
+// class C1
+// {
+//     use Counter;
+// }
+
+// class C2
+// {
+//     use Counter;
+// }
+
+// $o = new C1();
+// $o->inc();
+// $p = new C2();
+// $p->inc();
+trait PropertiesTrait
+{
+    public $x = 1;
 }
 
-class domainW3 extends domain {
-  public $websiteName;
-  public function __construct() {
-    $this->websiteName = parent::getWebsiteName();
-  }
+class PropertiesExample
+{
+    use PropertiesTrait;
 }
 
-$domainW3 = new domainW3;
-echo $domainW3 -> websiteName;
+$example = new PropertiesExample();
+echo $example->x;
