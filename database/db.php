@@ -22,5 +22,17 @@ if($conn->query($sql) === TRUE){
 }else{
     echo "error".$conn->error;
 }
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 
+// echo "Database connected successfully";
+// $sql = "insert into myguests(firstname,lastname)
+// values('john','doe')";
+
+// if($conn->query($sql) === TRUE){
+//     echo "data inserted succesfully";
+// }else{
+//     echo "error".$conn->error;
+// }
 ?>
